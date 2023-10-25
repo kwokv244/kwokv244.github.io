@@ -1,0 +1,87 @@
+body {
+   background-color: #292222;
+}
+
+.title {
+    color: #F5F5DC;
+    text-align: center;
+    font-family: ToonyLineFill;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.subheader {
+    color: #FFF;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.mooncake {
+width: 309.613px;
+height: 275.95px;
+transform: rotate(72.51deg);
+flex-shrink: 0;
+transform: translate(83.41px, -215.35px);
+}
+.mooncake:hover {
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+}
+
+.mooncakepiece {
+    transform: translate(258px, 259px);
+}
+
+.mooncakepiece:hover {
+    animation: drag 10s;
+    animation-iteration-count: 1;
+
+}
+
+.lasttext {
+    transform: translateY(2650px);
+    color: #FFF;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+
+
+
+@keyframes shake {
+    0% {  transform: translate(83.41px, -215.35px) rotate(0deg); }
+    10% { transform: translate(83.41px, -215.35px) rotate(-1deg); }
+    20% { transform: translate(83.41px, -215.35px) rotate(1deg); }
+    30% { transform: translate(83.41px, -215.35px) rotate(0deg); }
+    40% { transform: translate(83.41px, -215.35px) rotate(1deg); }
+    50% { transform: translate(83.41px, -215.35px) rotate(-1deg); }
+    60% { transform: translate(83.41px, -215.35px) rotate(0deg); }
+    70% { transform: translate(83.41px, -215.35px) rotate(-1deg); }
+    80% { transform: translate(83.41px, -215.35px) rotate(1deg); }
+    90% { transform: translate(83.41px, -215.35px) rotate(0deg); }
+    100% { transform:translate(83.41px, -215.35px)  rotate(-1deg); }
+  }
+
+  @keyframes drag {
+    0% { transform: translate(258px, 259px);} 
+    70% { transform: translate(985px, 1455px);}   
+    100% { transform: translate( 1349px, 2320px);}
+
+  }
+
+@font-face {
+    font-family: ToonyLineFill;
+    src: url(toonyline_personal_use_only-webfont.woff) format("woff");
+    font-weight: normal;
+    font-style: normal;
+}

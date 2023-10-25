@@ -1,0 +1,99 @@
+body {
+    background-color: rgb(41,34,34);
+}
+
+h2 {
+    color: #F5F5DC;
+    text-align: center;
+    font-family: toony_line_personalregular;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+p {
+    color: #FFF;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.tofu {
+    display: flex;
+    position: relative;
+    z-index: 1;
+    flex-shrink: 0;
+    width: 819px;
+    height: 442px;
+    transform: translate(400px, 80px);
+}
+
+.tofu:hover {
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+}
+
+.text1 {
+    display: flex;
+    width: 553px;
+    height: 81px;
+    flex-shrink: 0;
+    transform: translate(541px, -400px);
+}
+
+.text2 {
+    display: flex;
+    width: 432px;
+    height: 84px;
+    transform: rotate(90.658deg);
+    flex-shrink: -1;
+    transform: translate(540px, -45px);
+}
+
+.text3 {
+    display: flex;
+    width: 288px;
+    height: 115px;
+    flex-shrink: -1;
+    transform: translate(895px, -230.92px);
+
+}
+
+.tofus {
+    display: flex;
+    z-index: 3;
+    flex-shrink: 0;
+    width: 2700.708px;
+    height: 1579.407px;
+    justify-self: center;
+    transform: translateY(-1000px);
+}
+
+.tofus:hover {
+opacity: 0;
+}
+
+@font-face {
+    font-family: 'toony_line_personalregular';
+    src: url('toonyline_personal_use_only-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@keyframes shake {
+    0% {  transform:  translate(400px, 80px), rotate(0deg); }
+    10% { transform:  translate(400px, 80px), rotate(-2deg); }
+    20% { transform:  translate(400px, 80px), rotate(2deg); }
+    30% { transform:  translate(400px, 80px), rotate(0deg); }
+    40% { transform:  translate(400px, 80px), rotate(-2deg); }
+    50% { transform:  translate(400px, 80px), rotate(-2deg); }
+    60% { transform:  translate(400px, 80px), rotate(0deg); }
+    70% { transform:  translate(400px, 80px), rotate(-2deg); }
+    80% { transform:  translate(400px, 80px), rotate(2deg); }
+    90% { transform:  translate(400px, 80px), rotate(0deg); }
+    100% { transform: translate(400px, 80px), rotate(-2deg); }
+}

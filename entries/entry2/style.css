@@ -1,0 +1,62 @@
+body {
+    background-color: rgb(41,34,34);
+}
+h2 {
+    color: beige;
+    text-align: center;
+    font-family: toony_line_personalregular;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+}
+h5 {
+    color: aliceblue;
+    font-size: 20px;
+    text-align: center;
+}
+p {
+    color: aliceblue;
+    font-size: 15px;
+    text-align: center;
+}
+h6 {
+    color: black;
+    font-size: 15px;
+    text-align: center;
+    animation: fade ease-in;
+    animation-duration: 12s;
+
+}
+h3 {
+    color: blanchedalmond;
+    text-align: center;
+    letter-spacing: -3px;
+    font-weight: lighter;
+    font-size: 50px;
+    transition: 600ms ease;
+    font-variation-settings: "wght" 311;
+    margin-bottom: 0.8rem;
+    animation: fade ease;
+    animation-duration: 9s;
+}
+h3:hover {
+    font-variation-settings: "wght" 900; 
+    font-weight: bolder;
+    letter-spacing: 10px;
+}
+@keyframes fade {
+    from {
+opacity: 0;
+    }
+to {
+}
+}
+
+@font-face {
+    font-family: 'toony_line_personalregular';
+    src: url('toonyline_personal_use_only-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}

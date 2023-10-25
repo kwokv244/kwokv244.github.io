@@ -1,0 +1,78 @@
+body {
+    background-color: rgb(41,34,34);
+}
+
+h2 {
+    color: #F5F5DC;
+    text-align: center;
+    font-family: toony_line_personalregular;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+p {
+    color: #FFF;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.lefteye {
+    display: flex;
+    width: 364.5px;
+    height: 219.121px;
+    flex-shrink: 0;
+    background: url(lefteye/lefteye.png) no-repeat;
+    transform: translate(387.04px, 90.92px);
+}
+
+.lefteye:hover {
+    background: url(righteye/right-closed.png) no-repeat;
+    transform: translate(387.04px, 190.92px);
+}
+
+
+.smile {
+    display: flex;
+    width: 64.753px;
+    height: 28.914px;
+    transform: rotate(-159.794deg);
+    flex-shrink: 0;
+    transform: translate(828.04px, 42.76px);
+}
+
+.righteye {
+   display: flex;
+    width: 360.196px;
+    height: 219.759px;
+    flex-shrink: 0;
+    background: url(righteye/righteye.png) no-repeat;
+    transform: translate(974.32px, -167.92px);
+    
+}
+
+.righteye:hover {
+    background: url(righteye/right-closed.png) no-repeat;
+    transform: translate(974.32px, -67.92px);
+}
+
+h6 {
+color: #FFF;
+text-align: center;
+font-family: 'Times New Roman', Times, serif;
+font-size: 40px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+@font-face {
+    font-family: 'toony_line_personalregular';
+    src: url('toonyline_personal_use_only-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
