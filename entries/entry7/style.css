@@ -1,0 +1,74 @@
+body {
+    background-color: rgb(41,34,34);
+}
+
+h2 {
+    color: #F5F5DC;
+    text-align: center;
+    font-family: toony_line_personalregular;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+p {
+    color: #FFF;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+@font-face {
+    font-family: 'toony_line_personalregular';
+    src: url('toonyline_personal_use_only-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.text {
+color: #FFF;
+text-align: center;
+font-family: 'Times New Roman', Times, serif;
+font-size: 40px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+transform: translateY(50px);
+}
+
+.arrow {
+    display: flex;
+    transform: translate(1300px, 100px);
+    width: 100%;
+    height: auto;
+}
+
+.ghost {
+    display: flex;
+    flex-shrink: 0;
+    justify-content: center;
+    align-self: flex-start;
+    width: 600px;
+    height: 760px;
+}
+@media screen and (min-width:665px) {  
+    .ghost{
+    display: none;
+    }
+    .text {
+        display: none;
+    }
+  }
+
+  @media screen and (max-width:665px) {
+    .arrow {
+        display: none;
+    }
+    
+  }
+
+ 
