@@ -3,8 +3,8 @@ body {
 }
 
 h2 {
+   text-align: center;
     color: #F5F5DC;
-    text-align: center;
     font-family: toony_line_personalregular;
     font-size: 64px;
     font-style: normal;
@@ -129,13 +129,62 @@ h3 {
 
 
 
-@media (max-width:768px) {
+@media screen and (max-width: 800px) {
+
+    h3 {
+        color: #FFF;
+        letter-spacing: 1px;
+        font-family: Ultra;
+        font-size: 90px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
     .cylinder1 {
-        transform: translateX(1187px) translateY(219px) rotate(-30.867deg);
+        display: flex;
+        align-items: start;
+        transform: translateX(200px) translateY(306px) rotate(40deg); 
+    }
+
+    .stick1 {
+        display: flex;
+        align-items: center;
+        transform: translateX(-260px) translateY(490px) rotate(-49deg); 
+    }
+
+    .MARSH {
+        text-align: center;
+        transform: translateY(-319px);
+    }
+    .MALLOW {
+        text-align: center;
+        transform: translateY(-419px);
+    }
+    .with {
+        text-align: center;
+        transform: translateY(-190px);
+    }
+    .friends {
+        text-align: center;
+        transform: translateY(-290px);
+   
     }
 
     .cylinder2 {
-        transform: scale(80%);
+        display: none;
+        opacity: 0%;
+    }
+
+    .stick2 {
+        display: none;
+        opacity: 0%
+    }
+
+    .bonfire {
+        display: flex;
+        transform: translate(80px, -134px);
+
     }
 }
 
