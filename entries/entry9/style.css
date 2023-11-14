@@ -1,0 +1,58 @@
+body {
+    background-color: rgb(41,34,34);
+}
+
+@font-face {
+    font-family: 'toony_line_personalregular';
+    src: url(toonyline_personal_use_only-webfont.woff) format(woff);
+}
+
+h2 {
+   text-align: center;
+    color: #F5F5DC;
+    font-family: toony_line_personalregular;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+p {
+    color: #FFF;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.wavy {
+    position: relative;
+    width: 300px;
+    height: 50px;
+    
+}
+
+.wavy::before {
+content: 'aaaaaaaaaaaaaaaaaaa' ;
+position: absolute ; 
+font-size: 4em;
+color: transparent;
+text-decoration-style: wavy;
+text-decoration-color: #F5F5DC;
+text-decoration-line: underline;
+animation: waves 10s linear infinite;
+}
+
+@keyframes waves {
+    0% {
+        transform: translateX(-1px);
+    }
+
+    100% {
+        transform: translateX(-150px);
+    }
+
+    
+}

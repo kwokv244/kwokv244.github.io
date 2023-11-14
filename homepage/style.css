@@ -1,0 +1,117 @@
+@font-face {
+    font-family: 'IBM Plex Mono';
+    src: url(IBMPlexMono-Regular.ttf) format('ttf');
+}
+
+@font-face {
+    font-family: 'ToonyLineRegular';
+    src: url(toonyline_personal_use_only-webfont.woff) format(woff);
+}
+
+@font-face {
+    font-family: 'ToonyLineRegularFill';
+    src: url(ToonyLineFill_PERSONAL_USE_ONLY.woff) format(woff);
+}
+
+body {
+    background-color: rgb(41,34,34);
+}
+
+h2 {
+color: #FFF;
+text-align: center;
+font-family: IBM Plex Mono;
+font-style: normal;
+font-weight: 400;
+}
+
+.title {
+  width: 18em;
+  opacity: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: .15em solid #F5F5DC;
+  -webkit-animation: type3 5s steps(20, end), blink .5s step-end infinite alternate;
+  animation: type3 2s steps(20, end), blink .5s step-end infinite alternate;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+.header { 
+    animation: fade ease;
+    animation-duration: 9s;
+}
+a {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: center;
+    color: #F5F5DC;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100px;
+    font-family: ToonyLineRegular;
+    text-decoration: none;
+    animation: fade ease;
+    animation-duration: 9s;
+}
+
+a:hover {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+    color: #F5F5DC;
+    font-size: 64px;
+    font-style: normal;
+    font-kerning: 100px;
+    font-weight: 400;
+    line-height: 100px;
+    font-family: ToonyLineRegularFill;
+}
+
+@keyframes type3 {
+    0% {
+      width: 0;
+    }
+    1% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @-webkit-keyframes type3 {
+    0% {
+      width: 0;
+    }
+    1% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes blink {
+    50% {
+      border-color: transparent;
+    }
+  }
+  @-webkit-keyframes blink {
+    50% {
+      border-color: tranparent;
+    }
+  }
+
+  @keyframes fade {
+    from {
+opacity: 0;
+    }
+to {
+opacity: 1;
+}
+}
+
