@@ -29,6 +29,9 @@ p {
 
 .wavy {
     position: relative;
+    text-align: center;
+    background: transparent;
+    overflow: hidden;
     width: 300px;
     height: 50px;
     
@@ -37,12 +40,15 @@ p {
 .wavy::before {
 content: 'aaaaaaaaaaaaaaaaaaa' ;
 position: absolute ; 
+top: -30px;
+left: 0;
 font-size: 4em;
 color: transparent;
 text-decoration-style: wavy;
 text-decoration-color: #F5F5DC;
 text-decoration-line: underline;
-animation: waves 10s linear infinite;
+animation: waves 3s linear infinite;
+animation-iteration-count: infinite;
 }
 
 @keyframes waves {
