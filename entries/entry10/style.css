@@ -1,13 +1,37 @@
 
-.special {
-    font-family: arial;
-    font-size: 100px;
-    color: red;
-  }
 
-  body {
-    background-color:  black;
-  }
+
+body {
+  background-color: #F5F5DC;
+  margin: 0;
+  overflow: hidden;
+  cursor: none;
+}
+
+@font-face {
+  font-family: 'toony_line_personalregular';
+  src: url(toonyline_personal_use_only-webfont.woff) format(woff);
+}
+
+h2 {
+ text-align: center;
+  color:  rgb(41,34,34);
+  font-family: toony_line_personalregular;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+p {
+  color: #F5F5DC;
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
   
   section {
     display:  flex;
@@ -17,11 +41,32 @@
     height:  100vh;
   }
   
+  #cursor {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #F5F5DC; 
+    position: absolute;
+    pointer-events: none; /* Ensure the cursor doesn't interfere with other elements */
+  }
+
+  #image {
+    display: none;
+    width: 306px;
+    height: 408px;
+    flex-shrink: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
   .button {
     padding: 20px 50px;
     border-radius: 30px;
-    background-color:  white;
-    color:  black;
+    background-color:  rgb(41,34,34);
+    color:  #F5F5DC;
+    font-family: toony_line_personalregular;
     font-size:  60px;
     font-size: 20px;
     text-align:  center;
@@ -40,5 +85,5 @@
   }
   
   .light {
-    background-color: papayawhip;
+    background-color: rgb(41,34,34);
   }
