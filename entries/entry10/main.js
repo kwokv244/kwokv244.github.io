@@ -28,4 +28,14 @@ function toggleImage() {
   image.style.display = isVisible ? 'none' : 'block';
 }
 
+function changeButtonText() {
+  var button = document.getElementById('turn off the lights');
+
+  if (button.textContent === 'turn off the lights') {
+    button.textContent = 'turn on the lights';
+  } else {
+    button.textContent = 'turn off the lights';
+  }
+}
+
 

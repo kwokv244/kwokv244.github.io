@@ -1,0 +1,93 @@
+@font-face {
+    font-family: 'DatBox';
+    src: url(DatBox.ttf) format(ttf);
+  }
+
+  body {
+    background-color: rgb(41,34,34);
+}
+
+@font-face {
+    font-family: 'toony_line_personalregular';
+    src: url(toonyline_personal_use_only-webfont.woff) format(woff);
+}
+
+h2 {
+   text-align: center;
+    color: #F5F5DC;
+    font-family: toony_line_personalregular;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+p {
+    color: #FFF;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.subheader{
+transform: translateY(500px);
+}
+
+#text{
+    text-align:center;
+    position: relative; 
+    font-size:10em;
+    font-family: DatBox;
+    transform: translateY(800px);
+    
+  }
+  .text0 {
+    color: rgb(41,34,34); 
+  }
+  .text1 {
+    color: rgb(41,34,34);
+  }
+  
+  section {
+    display:  flex;
+    flex-direction:  column;
+    justify-content: center;
+    align-items:  center;
+    height:  200vh;
+    transform: translateY(-100px);
+  }
+  
+  .button {
+    padding: 20px 50px;
+    border-radius: 30px;
+    background-color: whitesmoke;
+    color:  #F5F5DC;
+    font-family: toony_line_personalregular;
+    font-size:  60px;
+    font-size: 20px;
+    text-align:  center;
+    text-align:  center;
+    transition:  all 100ms;
+  }
+  
+  .button:hover {
+    background-color: #DEB887;
+    cursor:  pointer;
+  }
+
+  @media only screen and (max-width: 600px) {
+   h2{
+    font-size: 50px;
+   }
+    #back{
+      cursor:none;
+      font-size:0.8em;
+    }
+    #text{
+      font-size:7.25em;
+    }
+  
+  }
