@@ -55,9 +55,33 @@ opacity: 1;
 }
 }
 
+a {
+    color: #F5F5DC;
+    text-decoration: none;
+    padding: 100px;
+}
+
+a:hover {
+    letter-spacing: 10px;
+}
+
+.buttons {
+display: flex;
+align-items: center;
+justify-content: space-evenly;
+font-family: IBM Plex Mono;
+color: #F5F5DC;
+}
+
+
 @font-face {
     font-family: 'toony_line_personalregular';
     src: url('toonyline_personal_use_only-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+}
+
+@font-face {
+    font-family: 'IBM Plex Mono';
+    src: url(IBMPlexMono-Regular.ttf) format('ttf');
 }

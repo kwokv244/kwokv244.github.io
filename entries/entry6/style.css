@@ -1,6 +1,10 @@
 body {
     background-color: rgb(41,34,34);
+    background-image: url(imgs/tofus.png);
+    background-repeat: no-repeat;
+    background-size: 1500px;
 }
+
 
 h2 {
     color: #F5F5DC;
@@ -30,28 +34,38 @@ p {
     width: 819px;
     height: 442px;
     transform: translate(400px, 80px);
+    opacity: 0;
 }
 
 .tofu:hover {
-    animation: shake 0.5s;
-    animation-iteration-count: infinite;
+    opacity: 1;
+    background-image: none;
 }
 
 .text1 {
     display: flex;
+    opacity: 0;
     width: 553px;
     height: 81px;
     flex-shrink: 0;
     transform: translate(541px, -400px);
 }
 
+.text1:hover {
+    opacity: 1;
+}
+
 .text2 {
-    display: flex;
+    display: flex;align-self: start;
     width: 432px;
     height: 84px;
     transform: rotate(90.658deg);
     flex-shrink: -1;
     transform: translate(540px, -45px);
+}
+
+.text2:hover {
+opacity: 1;
 }
 
 .text3 {
@@ -63,12 +77,16 @@ p {
 
 }
 
+.text3:hover {
+    opacity: 1;
+}
+
 .tofus {
     display: flex;
     z-index: 3;
     flex-shrink: 0;
-    width: 2700.708px;
-    height: 1579.407px;
+    max-width: 100%;
+    height: auto;
     justify-self: center;
     transform: translateY(-1000px);
 }
@@ -96,4 +114,34 @@ opacity: 0;
     80% { transform:  translate(400px, 80px), rotate(2deg); }
     90% { transform:  translate(400px, 80px), rotate(0deg); }
     100% { transform: translate(400px, 80px), rotate(-2deg); }
+}
+
+@media screen and (max-width: 1000px) {
+    .tofus {
+        display: flex;
+        flex-shrink: 0;
+        width: 2700.708px;
+        height: 1579.407px;
+        justify-self: center;
+        transform: translateY(-1000px);
+    }
+
+}
+
+a {
+    color: #F5F5DC;
+    text-decoration: none;
+    padding: 100px;
+}
+
+a:hover {
+    letter-spacing: 10px;
+}
+
+.buttons {
+display: flex;
+align-items: center;
+justify-content: space-evenly;
+font-family: IBM Plex Mono;
+color: #F5F5DC;
 }

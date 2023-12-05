@@ -69,11 +69,12 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    flex-direction: row;
-    transform: translateY(-300px);
+    align-items: center;
+    flex-direction: row-reverse;
 }
 
 .warmth-text {
+    order: 0;
     display: flex;
     color: #F5F5DC;
     font-family: Times New Roman;   
@@ -83,6 +84,7 @@ body {
     line-height: normal;
     justify-content: center;
     align-self: center;
+
 }
 
 .warmth-text:hover {
@@ -103,7 +105,6 @@ body {
     flex-shrink: 0;
     width: 761px;
     height: 977px;
-    transform: translateX(300px);
 }
 
 .smiles {
@@ -137,6 +138,24 @@ body {
     width: 761px;
     height: 1112px;
     flex-shrink: 0;
+}
+
+a {
+    color: #F5F5DC;
+    text-decoration: none;
+    padding: 100px;
+}
+
+a:hover {
+    letter-spacing: 10px;
+}
+
+.buttons {
+display: flex;
+align-items: center;
+justify-content: space-evenly;
+font-family: IBM Plex Mono;
+color: #F5F5DC;
 }
 
 @font-face {

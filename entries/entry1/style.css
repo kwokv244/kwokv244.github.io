@@ -1,0 +1,7 @@
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-family: IBM Plex Mono;
+    color: #F5F5DC;
+    }

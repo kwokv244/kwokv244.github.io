@@ -59,6 +59,47 @@ animation-iteration-count: infinite;
     100% {
         transform: translateX(-150px);
     }
+}
 
+.rowofimages {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+
+.rowofimages img {
+    max-width: 400px; /* Maximum width is the width of the container */
+    max-height: auto; /* Maximum height is the height of the container */
+    object-fit: contain; /* Maintain aspect ratio and fit within the container */
+    padding: 10px;
+}
+
+
+a {
+    color: #F5F5DC;
+    text-decoration: none;
+    padding: 100px;
+}
+
+a:hover {
+    letter-spacing: 10px;
+}
+
+.buttons {
+display: flex;
+align-items: center;
+justify-content: space-evenly;
+font-family: IBM Plex Mono;
+color: #F5F5DC;
+transform: translateY(300px);
+}
+
+@media only screen and (max-width: 1000px) {
+    .rowofimages {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
     
+}
 }

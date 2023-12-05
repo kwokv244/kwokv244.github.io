@@ -22,28 +22,36 @@ p {
     line-height: normal;
 }
 
+.eyes {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
 .lefteye {
     display: flex;
     width: 364.5px;
     height: 219.121px;
     flex-shrink: 0;
     background: url(lefteye/lefteye.png) no-repeat;
-    transform: translate(387.04px, 90.92px);
 }
 
 .lefteye:hover {
+    display: flex;
     background: url(righteye/right-closed.png) no-repeat;
-    transform: translate(387.04px, 190.92px);
+    justify-content: space-around;
+    align-items: center;
+    transform: translateY(100px);
 }
 
 
 .smile {
     display: flex;
+    justify-content: center;
+    align-self: center;
     width: 64.753px;
     height: 28.914px;
-    transform: rotate(-159.794deg);
     flex-shrink: 0;
-    transform: translate(828.04px, 42.76px);
+    transform: translateY(100px);
 }
 
 .righteye {
@@ -52,13 +60,15 @@ p {
     height: 219.759px;
     flex-shrink: 0;
     background: url(righteye/righteye.png) no-repeat;
-    transform: translate(974.32px, -167.92px);
     
 }
 
 .righteye:hover {
-    background: url(righteye/right-closed.png) no-repeat;
-    transform: translate(974.32px, -67.92px);
+    display: flex;
+    background: url(righteye/right-closed.png) no-repeat; 
+    justify-content: space-around;
+    align-items: center;
+    transform: translateY(100px);
 }
 
 h6 {
@@ -70,6 +80,35 @@ font-style: normal;
 font-weight: 700;
 line-height: normal;
 }
+
+a {
+    color: #F5F5DC;
+    text-decoration: none;
+    padding: 100px;
+}
+
+a:hover {
+    letter-spacing: 10px;
+}
+
+.buttons {
+display: flex;
+align-items: center;
+justify-content: space-evenly;
+font-family: IBM Plex Mono;
+color: #F5F5DC;
+}
+
+@media only screen and (max-width: 800px) {
+
+    .eyes {
+        width: 100%;
+        height: auto;
+    }
+  
+  }
+
+
 @font-face {
     font-family: 'toony_line_personalregular';
     src: url('toonyline_personal_use_only-webfont.woff') format('woff');
