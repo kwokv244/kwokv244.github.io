@@ -2,7 +2,8 @@ body {
     background-color: rgb(41,34,34);
     background-image: url(imgs/tofus.png);
     background-repeat: no-repeat;
-    background-size: 1500px;
+    background-size: cover;
+    opacity: 1;
 }
 
 
@@ -28,58 +29,69 @@ p {
 
 .tofu {
     display: flex;
-    position: relative;
-    z-index: 1;
-    flex-shrink: 0;
-    width: 819px;
-    height: 442px;
-    transform: translate(400px, 80px);
+    flex-direction: column;
+    padding: -100px;
+    
+}
+
+.tofu img{
+    display: flex;
+    height: auto;
+    width: 60%;
+    margin-top: -4%;
+    justify-content: center;
+    align-self: center;
     opacity: 0;
 }
 
-.tofu:hover {
+.tofu img:hover {
     opacity: 1;
-    background-image: none;
 }
 
 .text1 {
-    display: flex;
-    opacity: 0;
-    width: 553px;
-    height: 81px;
-    flex-shrink: 0;
-    transform: translate(541px, -400px);
+    display: fixed;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
 }
-
-.text1:hover {
+.text1 img{
+    display: flex;
     opacity: 1;
+    width: 100%;
+    height: auto;
+    align-self: center;   
 }
 
 .text2 {
-    display: flex;align-self: start;
-    width: 432px;
-    height: 84px;
-    transform: rotate(90.658deg);
-    flex-shrink: -1;
-    transform: translate(540px, -45px);
+  display: fixed;
+  margin-left: 26%;
+  margin-right: auto;
+  margin-top: -1%;
+  width: 30%
 }
 
-.text2:hover {
-opacity: 1;
+.text2 img{
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
 }
+
 
 .text3 {
-    display: flex;
-    width: 288px;
-    height: 115px;
-    flex-shrink: -1;
-    transform: translate(895px, -230.92px);
+    display: fixed;
+    margin-left: 60%;
+    margin-top: -10%;
+
 
 }
 
-.text3:hover {
-    opacity: 1;
+.text3 img {
+    width: 50%;
 }
+
+
 
 .tofus {
     display: flex;
@@ -103,30 +115,19 @@ opacity: 0;
 }
 
 @keyframes shake {
-    0% {  transform:  translate(400px, 80px), rotate(0deg); }
-    10% { transform:  translate(400px, 80px), rotate(-2deg); }
-    20% { transform:  translate(400px, 80px), rotate(2deg); }
-    30% { transform:  translate(400px, 80px), rotate(0deg); }
-    40% { transform:  translate(400px, 80px), rotate(-2deg); }
-    50% { transform:  translate(400px, 80px), rotate(-2deg); }
-    60% { transform:  translate(400px, 80px), rotate(0deg); }
-    70% { transform:  translate(400px, 80px), rotate(-2deg); }
-    80% { transform:  translate(400px, 80px), rotate(2deg); }
-    90% { transform:  translate(400px, 80px), rotate(0deg); }
-    100% { transform: translate(400px, 80px), rotate(-2deg); }
+    0% {  transform: rotate(0deg); }
+    10% { transform:   rotate(-2deg); }
+    20% { transform:  rotate(2deg); }
+    30% { transform:   rotate(0deg); }
+    40% { transform:   rotate(-2deg); }
+    50% { transform:   rotate(-2deg); }
+    60% { transform:   rotate(0deg); }
+    70% { transform:  rotate(-2deg); }
+    80% { transform:  rotate(2deg); }
+    90% { transform:  rotate(0deg); }
+    100% { transform: rotate(-2deg); }
 }
 
-@media screen and (max-width: 1000px) {
-    .tofus {
-        display: flex;
-        flex-shrink: 0;
-        width: 2700.708px;
-        height: 1579.407px;
-        justify-self: center;
-        transform: translateY(-1000px);
-    }
-
-}
 
 a {
     color: #F5F5DC;
