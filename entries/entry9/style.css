@@ -76,11 +76,9 @@ animation-iteration-count: infinite;
 
 .first {
     background-image: url(imgs/coffeeandstories.JPG);
-}
-
-.first:hover {
     cursor: url(imgs/coffee-cup.png), auto;
 }
+
 
 a {
     color: #F5F5DC;
